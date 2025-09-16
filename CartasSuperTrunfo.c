@@ -1,5 +1,5 @@
 #include <stdio.h>
-//// Inclui a biblioteca padrão de entrada e saída em C.
+// Inclui a biblioteca padrão de entrada e saída em C.
 
 int main() {//função prinicipal, toda aplicação em C começa com a função main
 //Declaração das variaveis carta 1
