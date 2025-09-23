@@ -11,6 +11,10 @@ int main() {//função prinicipal, toda aplicação em C começa com a função 
     float pib1;//armazena como tipo de dado valores com casas decimais e pontos flutuantes
     int pontosTuristicos1;//armazena como tipo de dado valores inteiros
 
+     // Variáveis para cálculo da Carta 1 adicionadas no nível aventurireiro 
+    float densidadePopulacional1; // População dividida pela área
+    float pibPerCapita1; // PIB dividido pela população
+
      // Declaração das variáveis da Carta 2
 
     char estado2;//char armazena dados do tipo caracter
@@ -20,6 +24,10 @@ int main() {//função prinicipal, toda aplicação em C começa com a função 
     float area2;//armazena como tipo de dado valores com casas decimais e pontos flutuantes
     float pib2;//armazena como tipo de dado valores com casas decimais e pontos flutuantes
     int pontosTuristicos2;//armazena como tipo de dado valores inteiros
+
+     // Variáveis para cálculo da Carta 2
+    float densidadePopulacional2; // População dividida pela área
+    float pibPerCapita2; // PIB dividido pela população
 
     // Cadastro da Carta 1
     printf("=== Cadastro da Carta 1 ===\n"); // printf: imprime texto na tela
@@ -46,6 +54,12 @@ int main() {//função prinicipal, toda aplicação em C começa com a função 
 
     printf("Digite o Numero de Pontos Turisticos: "); // printf: imprime texto na tela
     scanf("%d", &pontosTuristicos1);//escificador de formato %d para valores inteiros
+
+     // Cálculos da Carta 1
+    densidadePopulacional1 = populacao1 / area1; // População dividida pela Área
+    pibPerCapita1 = (pib1 * 1000000000) / populacao1; 
+    // PIB está em bilhões → multiplica por 1.000.000.000 para obter em reais
+    // Depois divide pela população
 
 
     // Cadastro da Carta 2
@@ -74,6 +88,12 @@ int main() {//função prinicipal, toda aplicação em C começa com a função 
     printf("Digite o Numero de Pontos Turisticos: "); // printf: imprime texto na tela
     scanf("%d", &pontosTuristicos2);//escificador de formato %d para valores inteiros
 
+     // Cálculos da Carta 2
+    densidadePopulacional2 = populacao2 / area2; // Fórmula: População dividida pela Área
+    pibPerCapita2 = (pib2 * 1000000000) / populacao2; 
+    // PIB está em bilhões → multiplica por 1.000.000.000 para obter em reais
+    // Depois divide pela população
+
     // Exibição da Carta 1
     printf("\n=== Carta 1 ===\n");// printf: imprime texto na tela
     printf("Estado: %c\n", estado1); // printf: imprime texto na tela
@@ -90,6 +110,11 @@ int main() {//função prinicipal, toda aplicação em C começa com a função 
     //%f escificador de formato de valores decimais com ponto flutuante,\n pula linha
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);// printf: imprime texto na tela
     //%d especificador de formato para valores inteiros, \n pula linha
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional1);//printf: imprime texto na tela
+    //%.2f especificador de formato para valores decimais com ponto flutuante com 2 casas decimais,\n pula linha
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);//printf: imprime texto na tela
+    //%.2f especificador de formato para valores decimais com ponto flutuante com 2 casas decimais,\n pula linha
+
 
     // Exibição da Carta 2
     printf("\n=== Carta 2 ===\n");// printf: imprime texto na tela
@@ -107,6 +132,10 @@ int main() {//função prinicipal, toda aplicação em C começa com a função 
     //%f escificador de formato de valores decimais com ponto flutuante,\n pula linha
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);// printf: imprime texto na tela
     //%d especificador de formato para valores inteiros, \n pula linha
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);//printf: imprime texto na tela
+    //%.2f especificador de formato para valores decimais com ponto flutuante com 2 casas decimais,\n pula linha
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita2);//printf: imprime texto na tela
+    //%.2f especificador de formato para valores decimais com ponto flutuante com 2 casas decimais,\n pula linha
 
 
     return 0;//indica que o programa terminou sem erros
