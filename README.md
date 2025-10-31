@@ -85,6 +85,66 @@ No nível Mestre, você implementará a comparação entre duas cartas e o cálc
 
 **Observação:**  Preste atenção à conversão de tipos ao calcular o Super Poder!
 
+## 🏁 Instruções de como compilar e executar
+Primeiro clone esse repositório para o seu ambiente local, após dê um duplo click no arquivo CartasSuperTrunfo.exe.Com isso o programa será excecutado e você podera adicionar valores, segue abaixo exemplos do que vc pode adicionar:
+
+EXEMPLO DE EXCUÇÃO:
+
+Cadastro da Carta 1
+Digite o Estado (A-H): A
+Digite o Codigo da Carta (ex: C07): C01
+Digite o Nome da Cidade: Curitiba
+Digite a Populacao: 1963726
+Digite a Area (em km²): 435.0
+Digite o PIB (em bilhoes de reais): 90.0
+Digite o Numero de Pontos Turisticos: 22
+
+Cadastro da Carta 2
+Digite o Estado (A-H): B
+Digite o Codigo da Carta (ex: C07): C02
+Digite o Nome da Cidade: Florianopolis
+Digite a Populacao: 516524
+Digite a Area (em km²): 675.0
+Digite o PIB (em bilhoes de reais): 30.0
+Digite o Numero de Pontos Turisticos: 15
+
+=== MENU DE COMPARACAO ===
+1 - Populacao
+2 - Area
+3 - PIB
+4 - Numero de Pontos Turisticos
+5 - Densidade Demografica
+Escolha o atributo para comparacao: 3
+
+Atributo: PIB
+Curitiba: 90.00 bilhões de reais
+Florianopolis: 30.00 bilhões de reais
+Vencedor: Curitiba
+
+EXEMPLO DO NÍVEL MESTRE:
+
+=== NÍVEL MESTRE: Comparação com Dois Atributos ===
+Escolha o primeiro atributo:
+1 - Populacao
+2 - Area
+3 - PIB
+4 - Pontos Turisticos
+5 - Densidade Demografica
+> 3
+
+Escolha o segundo atributo (diferente do primeiro):
+1 - Populacao
+2 - Area
+4 - Pontos Turisticos
+5 - Densidade Demografica
+> 4
+
+=== RESULTADO FINAL (Nível Mestre) ===
+Carta 1 (Curitiba): 90.00 + 22.00 = 112.00
+Carta 2 (Florianopolis): 30.00 + 15.00 = 45.00
+Vencedor: Curitiba
+
+
 
 ## 🏁 Conclusão
 
